@@ -34,9 +34,9 @@ applications.
 rm -v %{buildroot}%{extdir}/{COPYING,README.md}
 # fix install glibc schema
 mkdir -p %buildroot%_datadir/glib-2.0/schemas
-mv %buildroot%_datadir/gnome-shell/extensions/%eid/schemas/*.xml \
+mv %buildroot%_datadir/gnome-shell/extensions/%{ename}/schemas/*.xml \
   %buildroot%_datadir/glib-2.0/schemas
-rm -vr %buildroot%_datadir/gnome-shell/extensions/%eid/schemas
+rm -vr %buildroot%_datadir/gnome-shell/extensions/%{ename}/schemas
 
 %find_lang %{ename}
 
