@@ -9,7 +9,7 @@ License:        GPL-2.0-or-later
 URL:            https://github.com/home-sweet-gnome/dash-to-panel
 Source0:        %{url}/archive/v%{version}/%{ename}-%{version}.tar.gz
 # https://github.com/home-sweet-gnome/dash-to-panel/pull/1948
-Patch0:         %{name}-system-install-paths.patch
+#Patch0:         %{name}-system-install-paths.patch
 BuildArch:      noarch
 BuildRequires:  gettext
 BuildRequires:  make
