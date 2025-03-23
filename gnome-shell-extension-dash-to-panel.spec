@@ -32,6 +32,11 @@ applications.
 %install
 %make_install VERSION=%{version}
 rm -v %{buildroot}%{extdir}/{COPYING,README.md}
+# fix install glibc schema
+mkdir -p %buildroot%_datadir/glib-2.0/schemas
+mv %buildroot%_datadir/gnome-shell/extensions/%eid/schemas/*.xml \
+  %buildroot%_datadir/glib-2.0/schemas
+rm -vr %buildroot%_datadir/gnome-shell/extensions/%eid/schemas
 
 %find_lang %{ename}
 
