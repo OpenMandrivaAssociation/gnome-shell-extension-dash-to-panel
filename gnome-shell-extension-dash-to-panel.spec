@@ -3,7 +3,7 @@
 
 Name:           gnome-shell-extension-%{ename}
 Version:        73
-Release:        2
+Release:        3
 Summary:        Integrated icon taskbar and status panel for Gnome Shell
 License:        GPL-2.0-or-later
 URL:            https://github.com/home-sweet-gnome/dash-to-panel
